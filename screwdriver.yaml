@@ -1,0 +1,24 @@
+shared:
+  image: node16
+  steps:
+    - echo: echo "test"
+
+jobs:
+  a1:
+    requires: []
+  a4:
+    requires: [ sd@65:12352, sd@65:12352 ]
+
+  b1:
+    requires: []
+  b4:
+    requires: [ sd@65:12352, sd@65:12352 ]
+  b5:
+    requires: [ ~sd@65:12352, ~sd@65:12352 ]
+
+  c1:
+    requires: []
+  c4:
+    requires: [ sd@65:12352, sd@65:12352 ]
+  c5:
+    requires: [ ~sd@65:12352, ~sd@65:12352 ]
