@@ -7,18 +7,18 @@ jobs:
   a1:
     requires: []
   a4:
-    requires: [ sd@65:12352, sd@65:12352 ]
+    requires: [ sd@12352:a2, sd@12352:a3 ]
 
   b1:
     requires: []
   b4:
-    requires: [ sd@65:12352, sd@65:12352 ]
+    requires: [ sd@12352:b2, sd@12352:b3 ]
   b5:
-    requires: [ ~sd@65:12352, ~sd@65:12352 ]
+    requires: [ ~sd@12352:b2, ~sd@12352:b3 ]
 
   c1:
     requires: []
   c4:
-    requires: [ sd@65:12352, sd@65:12352 ]
+    requires: [ sd@12352:c2, sd@12352:c3 ]
   c5:
-    requires: [ ~sd@65:12352, ~sd@65:12352 ]
+    requires: [ ~sd@12352:c2, ~sd@12352:c3 ]
